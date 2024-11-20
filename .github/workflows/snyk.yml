@@ -1,5 +1,4 @@
-# Create workflow file
-echo 'name: Snyk Security Check
+name: Snyk Security Check
 
 on:
   push:
@@ -27,4 +26,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --severity-threshold=high' > .github/workflows/snyk.yml
+          args: --severity-threshold=high
